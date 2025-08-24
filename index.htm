@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="Portfolio website of Avdhut Dalvi - Web Developer skilled in HTML, CSS, JavaScript, React, Python, and more." />
+  <title>Avdhut Dalvi | Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <!-- Header -->
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">AVDHUT DALVI</div>
+      <ul class="nav-links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button id="darkToggle" aria-label="Toggle dark mode">🌙</button>
+    </nav>
+  </header>
+
+  <!-- Home -->
+  <main id="home" class="section home fade-in" tabindex="-1">
+    <img src="avdhut.jpg" alt="Profile photo of Avdhut Dalvi" class="profile-img" />
+    <h1>Hello, I'm <span>Avdhut Dalvi</span></h1>
+    <p class="typing">I'm <span id="typed"></span><span class="cursor" aria-hidden="true">|</span></p>
+    <a href="#projects" class="btn">View My Work</a>
+  </main>
+
+  <!-- About -->
+  <section id="about" class="section about fade-in">
+    <h2>About Me</h2>
+    <p>
+      Hi, I'm <strong>Avdhut Dalvi</strong>. I’m passionate about building modern,
+      user-friendly, and creative websites & applications. I love learning new
+      technologies and solving real-world problems.
+    </p>
+  </section>
+
+  <!-- Skills -->
+  <section id="skills" class="section skills fade-in">
+    <h2>Skills</h2>
+    <div class="skills-grid" role="list">
+      <button class="skill" role="listitem" data-skill="html"  aria-haspopup="dialog">HTML</button>
+      <button class="skill" role="listitem" data-skill="css"   aria-haspopup="dialog">CSS</button>
+      <button class="skill" role="listitem" data-skill="js"    aria-haspopup="dialog">JavaScript</button>
+      <button class="skill" role="listitem" data-skill="react" aria-haspopup="dialog">React</button>
+      <button class="skill" role="listitem" data-skill="git"   aria-haspopup="dialog">Git & GitHub</button>
+      <button class="skill" role="listitem" data-skill="py"    aria-haspopup="dialog">Python</button>
+    </div>
+  </section>
+
+  <!-- Projects -->
+  <section id="projects" class="section projects fade-in">
+    <h2>Projects</h2>
+    <div class="project-grid">
+      <article class="project-card">
+        <img src="project.png" alt="Screenshot of YouTube Clone project" />
+        <h3>YouTube Clone</h3>
+        <p>A simple clone of YouTube built with HTML, CSS, and JS.</p>
+        <a href="https://your-youtube-clone.netlify.app" target="_blank" rel="noopener" class="btn">Live Demo</a>
+        <a href="https://github.com/avdhutd345/youtube-clone" target="_blank" rel="noopener" class="btn">Code</a>
+      </article>
+
+      <article class="project-card">
+        <img src="project1.png" alt="Screenshot of Netflix Clone project" />
+        <h3>Netflix Clone</h3>
+        <p>A Netflix-inspired design with slideshow and watch-now features.</p>
+        <a href="https://your-netflix-clone.netlify.app" target="_blank" rel="noopener" class="btn">Live Demo</a>
+        <a href="https://github.com/avdhutd345/netflix-clone" target="_blank" rel="noopener" class="btn">Code</a>
+      </article>
+
+      <article class="project-card">
+        <img src="project2.png" alt="Screenshot of Portfolio Website project" />
+        <h3>Portfolio Website</h3>
+        <p>This website showcasing my projects, skills, and journey.</p>
+        <a href="https://your-portfolio.netlify.app" target="_blank" rel="noopener" class="btn">Live Demo</a>
+        <a href="https://github.com/avdhutd345/portfolio" target="_blank" rel="noopener" class="btn">Code</a>
+      </article>
+    </div>
+  </section>
+
+  <!-- Contact -->
+  <section id="contact" class="section contact fade-in">
+    <h2>Contact Me</h2>
+    <p>Email: <a href="dalviavdhut230@gmail.com">dalviavdhut230@gmail</a></p>
+    <p>GitHub: <a href="https://github.com/avdhutd345" target="_blank" rel="noopener">github.com/avdhutd345</a></p>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <p>© 2025 Avdhut Dalvi | All Rights Reserved</p>
+  </footer>
+
+  <!-- Skill Modal -->
+  <div id="skillModal" class="modal" role="dialog" aria-modal="true" aria-labelledby="modalTitle" aria-describedby="modalDesc" aria-hidden="true">
+    <div class="modal-content">
+      <button class="close" aria-label="Close dialog">×</button>
+      <h3 id="modalTitle"></h3>
+      <p id="modalDesc"></p>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
