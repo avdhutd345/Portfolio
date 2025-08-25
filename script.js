@@ -14,7 +14,7 @@ toggleBtn.addEventListener("click", () => {
 });
 
 /* ========== TYPING EFFECT ========== */
-const phrases = ["Developer", "Designer", "Innovator","haker"];
+const phrases = ["Developer", "Designer", "Innovator","Hackerr"];
 const typedEl = document.getElementById("typed");
 let pIndex = 0, cIndex = 0, deleting = false;
 
